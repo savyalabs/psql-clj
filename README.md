@@ -29,17 +29,17 @@ The library has three artifacts. Core has no PostGIS or AWS dependencies.
 deps.edn:
 
 ```clj
-net.clojars.savya/psql-clj     {:mvn/version "2.4.1"}
+net.clojars.savya/psql-clj     {:mvn/version "2.4.2"}
 net.clojars.savya/psql-clj-gis {:mvn/version "3.0.0"}  ;; optional, for PostGIS
-net.clojars.savya/psql-clj-aws {:mvn/version "3.0.0"}  ;; optional, for RDS IAM auth
+net.clojars.savya/psql-clj-aws {:mvn/version "3.0.1"}  ;; optional, for RDS IAM auth
 ```
 
 Leiningen:
 
 ```clj
-[net.clojars.savya/psql-clj "2.4.1"]
+[net.clojars.savya/psql-clj "2.4.2"]
 [net.clojars.savya/psql-clj-gis "3.0.0"]   ;; optional, for PostGIS
-[net.clojars.savya/psql-clj-aws "3.0.0"]   ;; optional, for RDS IAM auth
+[net.clojars.savya/psql-clj-aws "3.0.1"]   ;; optional, for RDS IAM auth
 ```
 
 ## Documentation
