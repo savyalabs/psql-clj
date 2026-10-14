@@ -57,16 +57,19 @@
                  (locking lock
                    (deliver lock-held true)
                    @release))
-        parser (future
-                 ((var-get #'service/with-service-file)
-                  {}
-                  #(deliver parser-called true)))]
+        ;; Start the parser only after the holder owns the lock, or it can win the race.
+        parser (delay
+                 (future
+                   ((var-get #'service/with-service-file)
+                    {}
+                    #(deliver parser-called true))))]
     (try
       @lock-held
+      (force parser)
       (is (= ::blocked (deref parser-called 100 ::blocked)))
       (deliver release true)
       (is (= true (deref parser-called 1000 ::timeout)))
       (finally
         (deliver release true)
         @holder
-        @parser))))
+        @@parser))))
