@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.3] - 2026-10-13
+
+### Changed
+- `psql-clj`: bump `org.postgresql/postgresql` to 42.7.14.
+
+## [3.0.2] - 2026-10-13
+
+### Changed
+- `psql-clj-aws`: bump `software.amazon.awssdk/rds` to 2.55.14.
+
 ## [2.4.2] - 2026-10-04
 
 ### Changed
