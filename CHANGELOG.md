@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.4] - 2026-11-03
+
+### Changed
+- `psql-clj`: bump `com.github.seancorfield/next.jdbc` to 1.4.72.
+
+## [3.0.3] - 2026-11-03
+
+### Changed
+- `psql-clj-aws`: bump `software.amazon.awssdk/rds` to 2.57.8.
+
 ## [2.4.3] - 2026-10-13
 
 ### Changed
