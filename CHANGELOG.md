@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.5] - 2026-11-10
+
+### Changed
+- `psql-clj`: bump `cheshire/cheshire` to 6.2.1.
+
+## [3.0.4] - 2026-11-10
+
+### Changed
+- `psql-clj-aws`: bump `software.amazon.awssdk/rds` to 2.57.11.
+
 ## [2.4.4] - 2026-11-03
 
 ### Changed
