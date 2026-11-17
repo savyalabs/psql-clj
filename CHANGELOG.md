@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.6] - 2026-11-16
+
+### Changed
+- `psql-clj`: no code changes; version bump required to tag the companion release below.
+
+## [3.0.5] - 2026-11-16
+
+### Changed
+- `psql-clj-aws`: bump `software.amazon.awssdk/rds` to 2.59.1.
+
 ## [2.4.5] - 2026-11-10
 
 ### Changed
